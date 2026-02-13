@@ -19,12 +19,15 @@ FakeVLM 학습 포맷으로 train.json / test.json을 생성한다.
 
 ## 📂 디렉토리 구조
 
+```
 playground
 └── data
-├── fake
-├── real
-├── train.json
-└── test.json
+    ├── fake
+    ├── real
+    ├── train.json
+    └── test.json
+```
+
 
 
 - fake / real : 프레임 이미지 저장
@@ -36,6 +39,8 @@ playground
 
 ```bash
 pip install yt-dlp opencv-python pillow tqdm openai
+```
+```
 JSON 생성 포맷
 {
   "image": "fake/xxx.png",
@@ -55,6 +60,7 @@ JSON 생성 포맷
   ]
 }
 ```
+
 label: 0 = fake, 1 = real
 cate: deepfake / real
 
