@@ -1,8 +1,8 @@
-# Korean Deepfake Auto-Labeling Dataset Pipeline
+# Youtube-Fake-Clue Dataset Pipeline
 
-한국어 기반 Deepfake 설명 생성 데이터셋 자동 구축 파이프라인
+Youtube Deepfake/AI manipulated Image Dataset Labeling Pipeline
 
-유튜브 영상에서 프레임을 추출하고, GPT 기반 자동 레이블링을 통해  
+유튜브 영상에서 프레임을 추출하고, GPT,Gemini,Claude Cooperated 자동 레이블링을 통해  
 Fake / Real 분류 + 한국어 설명(reasoning)을 생성하여  
 FakeVLM 학습 포맷으로 train.json / test.json을 생성한다.
 
@@ -64,8 +64,3 @@ JSON 생성 포맷
 label: 0 = fake, 1 = real
 cate: deepfake / real
 
-
-
-🎯 목표 데이터 규모
-Train: 10,000장
-Test: 1,000장
