@@ -12,7 +12,7 @@ FakeVLM 학습 포맷으로 train.json / test.json을 생성한다.
 
 - 한국어 기반 Deepfake 설명 데이터셋 구축
 - FakeClue 방식 차용 (설명 중심 레이블링)
-- GPT-5-mini 기반 자동 레이블링
+- GPT-5-mini, Gemini-3.0-Flash, Claude-Haiku-4.5 기반 자동 레이블링
 - FakeVLM 학습 포맷과 호환
 
 ---
