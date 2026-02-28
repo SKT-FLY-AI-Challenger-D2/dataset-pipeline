@@ -2,8 +2,8 @@
 
 Youtube Deepfake/AI manipulated Image Dataset Labeling Pipeline
 
-유튜브 영상에서 프레임을 추출하고, GPT,Gemini,Claude Cooperated 자동 레이블링을 통해  
-Fake / Real 분류 + 한국어 설명(reasoning)을 생성하여  
+GPT,Gemini,Claude Cooperated 자동 레이블링을 통해  
+설명(reasoning)을 생성하여  
 FakeVLM 학습 포맷으로 train.json / test.json을 생성한다.
 
 ---
@@ -51,11 +51,11 @@ JSON 생성 포맷
   "conversations": [
     {
       "from": "human",
-      "value": "<image>이 이미지는 real인가 fake인가?"
+      "value": "<image>is this image fake or real?"
     },
     {
       "from": "gpt",
-      "value": "이 이미지는 ... 이유로 fake이다."
+      "value": "this image is fake, texture: ..."
     }
   ]
 }
